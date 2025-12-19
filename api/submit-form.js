@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     mobile: req.body.input_phone_no || '',
     email: req.body.input_email || '',
     form: req.body.onclick || 'Enquire Now',
-    project: 'Birla Estates Kalwa',
+    project: 'Godrej Khargar',
     date: new Date().toLocaleDateString('en-GB'),
     time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true }),
     url: req.headers.referer || ''

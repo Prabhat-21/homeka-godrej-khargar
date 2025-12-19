@@ -304,18 +304,27 @@ nav ul li {
 .units,
 .possession_date {
   display: flex;
-  align-items: center;
-  gap: 4px;
+  align-items: flex-start;
+  gap: 8px;
   font-weight: 500;
   line-height: 19.84px;
   font-size: 14px;
   color: #666666;
 }
 
+.units div,
+.possession_date div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
 .possession_date svg,
 .units svg {
-  width: 15px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .total_acres,
@@ -1717,6 +1726,7 @@ input[type="checkbox"] {
 body.no-scroll {
   overflow: hidden;
 }
+
 
 
 

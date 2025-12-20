@@ -1727,6 +1727,49 @@ body.no-scroll {
   overflow: hidden;
 }
 
+/* Connectivity Section Styles */
+.connectivity-toggle {
+  width: 100%;
+  padding: 12px 20px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+}
+
+.connectivity-toggle:hover {
+  background: #037d44;
+}
+
+.connectivity-toggle .toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+.connectivity-toggle.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.connectivity-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+@media screen and (max-width: 660px) {
+  .connectivity-toggle {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+
 
 
 

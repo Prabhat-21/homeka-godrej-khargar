@@ -511,3 +511,18 @@ if (popup) {
   console.error("Element with class .popup_form not found.");
 }
 
+// Connectivity toggle function
+function toggleConnectivity() {
+  const content = document.getElementById('connectivityContent');
+  const button = document.querySelector('.connectivity-toggle');
+  
+  if (content.style.display === 'none' || content.style.display === '') {
+    content.style.display = 'block';
+    button.classList.add('active');
+  } else {
+    content.style.display = 'none';
+    button.classList.remove('active');
+  }
+}
+
+

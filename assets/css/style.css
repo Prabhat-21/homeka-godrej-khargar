@@ -295,37 +295,27 @@ nav ul li {
 .unit_n_date {
   padding-top: 1rem;
   border-top: 1px solid #e2e6e7;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 8px;
 }
 
 .units,
 .possession_date {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   font-weight: 500;
   line-height: 19.84px;
   font-size: 14px;
   color: #666666;
 }
 
-.units svg,
-.possession_date svg {
-  width: 18px;
-  height: 18px;
+.possession_date svg,
+.units svg {
+  width: 15px;
   flex-shrink: 0;
-}
-
-.units span,
-.possession_date span {
-  color: #666666;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22.32px;
-  margin-left: 4px;
 }
 
 .total_acres,
@@ -335,7 +325,6 @@ nav ul li {
   font-weight: 700;
   font-size: 16px;
   line-height: 22.32px;
-	margin-left: 4px;
 }
 
 .hero_left_body_usps {
@@ -1770,6 +1759,7 @@ body.no-scroll {
     padding: 10px 16px;
   }
 }
+
 
 
 

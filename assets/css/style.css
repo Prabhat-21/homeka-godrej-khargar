@@ -606,13 +606,14 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .overview {
-  height: 78px;
-  overflow-y: scroll;
+  height: 165px; /* Increased from 78px */
+  overflow-y: auto; /* Changed to 'auto' - only shows scrollbar when needed */
   padding-right: 8px;
+  line-height: 24px; /* Ensure consistent line height */
 }
 
 .overview::-webkit-scrollbar {
-  width: 2px;
+  width: 3px;
 }
 
 .overview::-webkit-scrollbar-thumb {
@@ -841,7 +842,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .last {
-  height: 100px;
+  height: 175px;
 }
 
 /*  */
@@ -1822,6 +1823,7 @@ body.no-scroll {
     padding: 10px 16px;
   }
 }
+
 
 
 

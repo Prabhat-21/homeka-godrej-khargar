@@ -1193,10 +1193,24 @@
           </div>
         </section>
 
-                  <!-- Connectivity Section -->
+                <!-- Connectivity Section -->
 <section class="section_divs" id="connectivity">
-  <h2 class="section_heading">Connectivity</h2>
+  <h2 class="section_heading">Location & Connectivity</h2>
 
+  <!-- Google Maps Container -->
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.2842866847596!2d73.06420731490034!3d19.043618287113597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c24cce39457b%3A0x8bd69eab197b49ca!2sSector%205%2C%20Kharghar%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+      width="100%" 
+      height="350" 
+      style="border:0; border-radius: 8px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Connectivity Toggle Button -->
   <button class="connectivity-toggle" onclick="toggleConnectivity()">
     <span>View Connectivity Details</span>
     <svg class="toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1204,72 +1218,83 @@
     </svg>
   </button>
 
+  <!-- Connectivity Details Dropdown -->
   <div id="connectivityContent" class="connectivity-content" style="display: none;">
     <div class="sub_section_divs" style="padding: 20px 20px 12px 20px; background: #f9f9f9; border-radius: 8px; margin-top: 24px;">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>Mumbai-Pune Expressway</strong> - <span style="color: #049352; font-weight: 600;">5 Mins</span></span>
+          <span><strong>Mumbai-Pune Expressway</strong> - <span class="highlight">5 Mins</span></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>Navi Mumbai International Airport</strong> - <span style="color: #049352; font-weight: 600;">15 Mins</span></span>
+          <span><strong>Navi Mumbai International Airport</strong> - <span class="highlight">15 Mins</span></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>Kharghar Railway Station</strong> - <span style="color: #049352; font-weight: 600;">10 Mins</span></span>
+          <span><strong>Kharghar Railway Station</strong> - <span class="highlight">10 Mins</span></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>CBD Belapur</strong> - <span style="color: #049352; font-weight: 600;">8 Mins</span></span>
+          <span><strong>CBD Belapur</strong> - <span class="highlight">8 Mins</span></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>Utsav Chowk Metro Station</strong> - <span style="color: #049352; font-weight: 600;">5 Mins</span></span>
+          <span><strong>Utsav Chowk Metro Station</strong> - <span class="highlight">5 Mins</span></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>Mumbai-Goa Highway</strong> - <span style="color: #049352; font-weight: 600;">20 Mins</span></span>
+          <span><strong>Mumbai-Goa Highway</strong> - <span class="highlight">20 Mins</span></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>Sion-Panvel Highway</strong> - <span style="color: #049352; font-weight: 600;">10 Mins</span></span>
+          <span><strong>Sion-Panvel Highway</strong> - <span class="highlight">10 Mins</span></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>Central Park Kharghar</strong> - <span style="color: #049352; font-weight: 600;">5 Mins</span></span>
+          <span><strong>Central Park Kharghar</strong> - <span class="highlight">5 Mins</span></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 12px; background: white; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+        <div class="connectivity-item">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="10" r="3" stroke="#049352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="font-size: 15px; color: #333;"><strong>BKC 2 (Proposed Business Hub)</strong> - <span style="color: #049352; font-weight: 600;">15 Mins</span></span>
+          <span><strong>BKC 2 (Proposed Business Hub)</strong> - <span class="highlight">15 Mins</span></span>
         </div>
+
       </div>
     </div>
   </div>
@@ -1890,6 +1915,7 @@
     </div>
   </body>
 </html>
+
 
 
 

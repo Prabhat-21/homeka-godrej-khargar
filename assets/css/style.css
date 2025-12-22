@@ -1753,12 +1753,76 @@ body.no-scroll {
   transition: max-height 0.3s ease;
 }
 
+/* Map Container */
+.map-container {
+  margin-top: 20px;
+  margin-bottom: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  display: block;
+}
+
+/* Connectivity Items */
+.connectivity-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.connectivity-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.connectivity-item svg {
+  flex-shrink: 0;
+}
+
+.connectivity-item span {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.connectivity-item .highlight {
+  color: #049352;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 660px) {
+  .map-container {
+    margin-top: 16px;
+  }
+  
+  .map-container iframe {
+    height: 250px !important;
+  }
+  
+  .connectivity-item {
+    padding: 10px;
+  }
+  
+  .connectivity-item span {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .connectivity-toggle {
     font-size: 14px;
     padding: 10px 16px;
   }
 }
+
 
 
 

@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyT0aNEkOg296BMHorMiJbhtAPqn6S9dmuPVDfMTrUuk6kSH71qlhz3FE-1myEIEYcQ1A/exec";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxFgwdO8wfXPoayZBSDh6dZj44FUc1rbJf9ySqDCMGcyYWEKi1euqKevNcO0uSzX7PulA/exec";
 
   const data = {
     name: req.body.input_name || '',

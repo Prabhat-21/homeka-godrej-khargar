@@ -148,15 +148,15 @@ nav {
 }
 
 .nav_container img {
-  max-width: 320px; /* Increased from 175px */
-  max-height: 48px; /* Increased from 35px */
+  max-width: 400px; /* Increased from 175px */
+  max-height: 80px; /* Increased from 35px */
   object-fit: contain;
 }
 
 @media screen and (max-width: 660px) {
   .nav_container img {
-    /*              max-width: 220px; /* Increased from 85px */
-    max-height: 45px;
+    /*              max-width: 280px; /* Increased from 85px */
+    max-height: 56px;
   }
 }
 
@@ -1824,6 +1824,7 @@ body.no-scroll {
     padding: 10px 16px;
   }
 }
+
 
 
 

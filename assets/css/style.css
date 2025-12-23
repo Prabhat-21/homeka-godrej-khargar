@@ -141,7 +141,7 @@ nav {
 }
 
 .nav_container {
-  padding-block: 8px;
+  padding-block: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1824,6 +1824,7 @@ body.no-scroll {
     padding: 10px 16px;
   }
 }
+
 
 
 

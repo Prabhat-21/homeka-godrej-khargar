@@ -299,13 +299,11 @@ nav ul li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .units,
 .possession_date {
-justify-content: flex-end; /* Add this */
-  text-align: right; /
   display: flex;
   align-items: center;
   gap: 4px;
@@ -313,6 +311,12 @@ justify-content: flex-end; /* Add this */
   line-height: 19.84px;
   font-size: 14px;
   color: #666666;
+}
+
+/* Only right-align possession_date */
+.possession_date {
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .possession_date svg,
@@ -1826,6 +1830,7 @@ body.no-scroll {
     padding: 10px 16px;
   }
 }
+
 
 
 

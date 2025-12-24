@@ -304,6 +304,8 @@ nav ul li {
 
 .units,
 .possession_date {
+justify-content: flex-end; /* Add this */
+  text-align: right; /
   display: flex;
   align-items: center;
   gap: 4px;
@@ -1824,6 +1826,7 @@ body.no-scroll {
     padding: 10px 16px;
   }
 }
+
 
 
 

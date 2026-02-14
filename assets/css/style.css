@@ -379,7 +379,7 @@ nav ul li {
   position: relative;
 }
 .hero_left h2::after {
-  content: "Godrej Khargar";
+  content: "Godrej Varanya Kharghar";
   position: absolute;
   top: 0;
   left: 0;
@@ -453,7 +453,7 @@ nav ul li {
 }
 
 .price::after {
-  content: "₹ 2.20 Cr* Onwards";
+  content: "₹ 2.25 Cr* Onwards";
   position: absolute;
   top: 0;
   left: 0;
